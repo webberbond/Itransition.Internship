@@ -1,0 +1,9 @@
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\FakeDataGen.exe
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\FakeDataGen.dll
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\FakeDataGen.deps.json
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\FakeDataGen.runtimeconfig.json
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\FakeDataGen.pdb
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\Bogus.dll
+C:\Users\HomeUser\Desktop\Новая папка\FakeDataGen\FakeDataGen\FakeDataGen\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll

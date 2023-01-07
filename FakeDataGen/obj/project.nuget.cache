@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "RRD/A2u50/oaThVNt7Gr6zm25lIdmHYezXx5EpSwQeP0ry+Wal+r0Q8cL/WeCGYYalpOaM2Alrm8n03VcRS5/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HomeUser\\Desktop\\Новая папка\\FakeDataGen\\FakeDataGen\\FakeDataGen\\FakeDataGen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HomeUser\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
+    "C:\\Users\\HomeUser\\.nuget\\packages\\jquery\\3.6.0\\jquery.3.6.0.nupkg.sha512",
+    "C:\\Users\\HomeUser\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
