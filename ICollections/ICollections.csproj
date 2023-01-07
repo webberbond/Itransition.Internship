@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<UserSecretsId>4399e2f2-c22d-424a-9156-b35f6678c162</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="wwwroot\ImageStorage\**" />
+	  <Content Remove="wwwroot\ImageStorage\**" />
+	  <EmbeddedResource Remove="wwwroot\ImageStorage\**" />
+	  <None Remove="wwwroot\ImageStorage\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BundlerMinifier.Core" Version="3.2.449" />
+		<PackageReference Include="CsvHelper" Version="27.2.1" />
+		<PackageReference Include="EntityFramework" Version="6.4.4" />
+		<PackageReference Include="jQuery" Version="3.5.1" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Views\Collection\" />
+	</ItemGroup>
+
+</Project>

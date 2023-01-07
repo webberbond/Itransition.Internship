@@ -1,0 +1,37 @@
+﻿@{
+
+}
+@model ICollections.ViewModels.RegisterViewModel
+<link href="~/css/styles.css" rel="stylesheet"/>
+
+    <form method="post" class="ui-form" asp-controller="User" asp-action="Registration">
+        <h3>ICollection</h3>
+
+        <div class="form-row">
+            <label class="lng-Login" asp-for="Login">Login</label><br/>
+            <input asp-for="Login" required/>
+            <span asp-validation-for="Login"></span>
+        </div>
+
+        <div class="form-row">
+            <label class="lng-Email" asp-for="Email">Email</label><br/>
+            <input asp-for="Email" type="email" required/>
+            <span asp-validation-for="Email"></span>
+        </div>
+
+        <div class="form-row">
+            <label class="lng-Password" asp-for="Password">Password</label><br/>
+            <input asp-for="Password" type="password" required/>
+            <span asp-validation-for="Password"></span>
+        </div>
+
+        <div class="form-row">
+            <label class="lng-PassConfirm" asp-for="PasswordConfirm">Confirm Password</label><br/>
+            <input asp-for="PasswordConfirm" type="password" required/>
+            <span asp-validation-for="PasswordConfirm"></span>
+        </div>
+        <p><button class="btn btn-outline-primary me-2 lng-Register"/></p>
+    </form>
+
+    <script src="/js/ChangeTheme.js"></script>
+    <script src="/js/ChangeLanguage.js"></script>

@@ -1,0 +1,57 @@
+﻿@model ICollections.ViewModels.ItemProfileViewModel
+ 
+<link href="~/css/styles.css" rel="stylesheet" />
+
+<div class="fs-3">
+    <div class="btn-group">
+        <img src="@Url.Content(Model.Item.Image)" style="width: 500px; height: 500px;" alt="" />
+        <ui>
+            <p>Name: @Model.Item.Name</p>
+            <p>Tag: @Model.Item.Tag</p>
+            <p>Description: @Model.Item.Description</p> @if (Model.ItemLikes != null)
+            {<p>Likes: @Model.ItemLikes.Count()</p>}
+        </ui>
+    </div>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<p></p> @if (User.Identity.IsAuthenticated){
+    <form method="post">
+    <div class="mb-3">
+        <label for="com" class="form-label fs-4"> Comment</label>
+        <textarea class="form-control" name="comment"></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-info" name="userName" value="@User.Identity.Name" formaction="~/Collection/SetItemComment" onSubmit="window.location.reload()">Send</button>
+    <input name="idItem" value="@Model.Item.Id" style="visibility: hidden" size="1" />
+        </form>} 
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+<div class="widget widget-comments open" id="comments">
+    <div class="block-title">Comments:</div>
+    <ol class="list-group list-group-numbered">@if (Model.ItemComments != null){
+        <p style="visibility: hidden"> @Model.ItemComments.OrderByDescending(i => i.Date);</p>@foreach (var i in Model.ItemComments){
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div>
+                    <form method="post" asp-action="UserProfile" asp-controller="User">@if (User.Identity.IsAuthenticated){
+                        <input name="name" value="@i.UserName" style="visibility: hidden" size="1" />
+                        <input type="submit" name="button" value="@i.UserName" class="btn btn-link text-dark" formaction="~/User/UserProfile">}
+                    else{ 
+                        <a class="text-dark">@i.UserName</a>}
+                        </form>
+                    <p>@i.Date</p>
+                    <p></p>
+                        </div> @i.Comment
+                </div>
+            </li>}}
+    </ol>
+</div>
+
+<script src="/js/ChangeTheme.js"></script>
+<script src="~/js/ChangeLanguage.js"></script>

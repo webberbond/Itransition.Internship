@@ -1,0 +1,24 @@
+﻿@model ICollections.ViewModels.LoginViewModel
+
+<link href="~/css/styles.css" rel="stylesheet" />
+
+<form method="post" class="ui-form" asp-controller="User" asp-action="Login" asp-route-returnUrl="@Model.ReturnUrl">
+    <h3>ICollection</h3>
+
+    <div class="form-row">
+        <label class="lng-Login" asp-for="Email">Login</label><br/>
+        <input asp-for="Email"/>
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <div class="form-row">
+        <label class="lng-Password" asp-for="Password">Password</label><br/>
+        <input asp-for="Password" />
+        <span asp-validation-for="Password"></span>
+    </div>
+
+    <p><button class="btn btn-outline-primary me-2 lng-signIn"/></p>
+</form>
+
+<script src="/js/ChangeTheme.js"></script>
+<script src="~/js/ChangeLanguage.js"></script>

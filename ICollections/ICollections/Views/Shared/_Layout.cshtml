@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] ICollection </title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="~/css/styles.css"/>
+</head>
+
+<body>
+    <header class="p-4 mb-4 border-bottom fs-4 text-black " style="color:darkgrey">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a class="lng-Catalog d-flex align-items-center mb-2 mb-lg-0  text-decoration-none fs-3 btn btn-outline-primary me-2 " asp-area="" asp-controller="Collection" asp-action="ItemsCatalog">Catalog</a>
+            <p></p>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li>
+                    @if (User.Identity.IsAuthenticated){<a class="lng-AdminMenu nav-link px-2  btn btn-outline-primary me-2" asp-area="" asp-controller="User" asp-action="AdminMenu">Admin Menu</a>}
+                </li>
+            </ul>
+            <div class="d-flex flex-wrap align-items-center justify-content-center">
+                <button class="btn btn-outline-primary me-2 lng-Switch" id="switch" onclick="toggleTheme()">Switch</button>
+                <select class="form-select nav-color" data-lng="en" id="lang-select">
+                    <option value="en" selected="">EN</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+
+            @if (User.Identity.IsAuthenticated){
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" method="post" asp-action="ItemsCatalog">
+                    <input type="search" name="str" placeholder="Catalog">
+                    <button class="btn btn-outline-primary me-2 lng-Search" formaction="~/Collection/ItemsCatalog">Search</button>
+                </form>
+            <form method="post" asp-controller="User" asp-action="UserProfile">
+            <button class=" btn btn-outline-primary me-2 lng-Profile" formaction="~/User/UserProfile"/>
+            <button class=" btn btn-outline-primary me-2 lng-signOut" asp-controller="User" asp-action="Logout"/>
+            <input name="name" value="@User.Identity.Name" style="visibility: hidden" size="1"/>
+                </form>}
+            else{ 
+                <div class="col-md-3 text-end">
+            <form>
+                <button class="btn btn-outline-primary me-2 lng-signIn" asp-controller="User" asp-action="Login"/>
+                <button class="btn btn-outline-primary me-2 lng-Register" asp-controller="User" asp-action="Registration"/>
+            </form>
+                    </div>}
+        </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3"> @RenderBody() </main>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/js/ChangeTheme.js"></script>
+    <script src="~/js/ChangeLanguage.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> @RenderSection("Scripts", required: false)
+</body>
+</html>

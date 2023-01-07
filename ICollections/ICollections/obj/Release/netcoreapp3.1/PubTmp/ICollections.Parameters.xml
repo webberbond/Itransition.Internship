@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ICollections" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\HomeUser\\Desktop\\ICollections\\ICollections\\ICollections\\obj\\Release\\netcoreapp3\.1\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="ICollections.Models.ApplicationContext" description="" value="Data Source=tcp:icollectionsdbserver.database.windows.net,1433;Initial Catalog=ICollections_db;User Id=webber@icollectionsdbserver;Password=Administrator1" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\HomeUser\\Desktop\\ICollections\\ICollections\\ICollections\\obj\\Release\\netcoreapp3\.1\\PubTmp\\EFSQLScripts\\ICollections\.Models\.ApplicationContext\.sql$" />
+  </parameter>
+</parameters>

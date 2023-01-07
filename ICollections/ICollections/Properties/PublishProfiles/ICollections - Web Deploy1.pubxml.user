@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAALr/BuZJlAEa1oHoD+CDTwAAAAAACAAAAAAAQZgAAAAEAACAAAADd/ssbU/LBJWk3bOzw9p6l5K07BCRhSvAoNML9QAhElgAAAAAOgAAAAAIAACAAAAAsak2dLXRxRF2Ua+XvldqLeiRfsRytIcFu2QkCRjG6zYAAAADKr7xDPu+P3ZgKJK//7fBot3WQfa45mNN7tbnwDt3ivIIYPbHW7mksaFKxOFIzzsxJNGzwpdkxnx3Cd7Lk9a2SrTkvGA2pFxBc9z0R5qj72XWNwUVeqfLC3VWshcuYhWZ/mmGt5Vs2bhgyzh4sTh6b/EIO/k5bzfvv2Z1gfqgFyUAAAADnmeda6ntd+Dc0z1NXgxDObB6DIUpTyN0FrphGWfmXr2BLQ5xFxjUv+F6eKOQZMCJ1efkVeSCggUHMDhWJkIsc</EncryptedPassword>
+    <History>True|2022-10-26T16:52:00.6529486Z;True|2022-10-25T20:05:55.3696508+05:00;False|2022-10-25T20:03:20.4996184+05:00;False|2022-10-25T20:02:50.4536658+05:00;False|2022-10-25T20:00:13.5620914+05:00;True|2022-10-23T02:40:43.9288653+05:00;True|2022-10-23T02:36:09.4441380+05:00;False|2022-10-23T02:30:44.5619594+05:00;False|2022-10-23T02:27:45.9964626+05:00;True|2022-10-22T21:02:27.0800299+05:00;True|2022-10-22T20:46:03.9549158+05:00;True|2022-10-22T20:44:05.9758759+05:00;True|2022-10-22T20:35:06.8106040+05:00;True|2022-10-21T23:54:35.4226459+05:00;False|2022-10-21T23:52:10.2292618+05:00;True|2022-10-21T00:43:10.2098750+05:00;False|2022-10-21T00:40:55.5894633+05:00;True|2022-10-20T18:17:59.9742303+05:00;False|2022-10-20T18:12:31.3482127+05:00;True|2022-10-20T02:26:41.1846432+05:00;True|2022-10-20T02:20:16.9759455+05:00;False|2022-10-20T02:17:37.0558880+05:00;True|2022-10-15T17:25:45.3234500+05:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <EFMigrations Include="ICollections.Models.ApplicationContext">
+      <Value>Data Source=tcp:icollectionsdbserver.database.windows.net,1433%3bInitial Catalog=ICollections_db%3bUser Id=webber%40icollectionsdbserver%3bPassword=Administrator1</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
